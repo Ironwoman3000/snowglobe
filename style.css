@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    color: #1b85c2;
+    background: linear-gradient(#bbe9fc, #ffffff);
+    font-family: "Libre Caslon Text", Georgia, serif;
+}
+
+.hero {
+    padding: 3rem 1rem 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+}
+
+h1 {
+    color: #961200;
+    font-size: 4rem;
+}
+
+.globe-card {
+    background: #fdf7e8;
+    border: 6px solid #0570ad;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+#message {
+    font-style: italic;
+}
+
+.globe {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 25%, #ffffff, #cfe6ff 65%, #367ecb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 78%;
+}
+
+button {
+    font: inherit;
+    color: #ffffff;
+    background: #961200;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background 150ms ease, transform 150ms ease;
+}
+
+button:hover {
+    background: #670d01;
+    transform: scale(1.05);
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    20% { transform: translateX(-0.6rem) rotate(-4deg); }
+    40% { transform: translateX(0.6rem) rotate(4deg); }
+    60% { transform: translateX(-0.4rem) rotate(-2deg); }
+    80% { transform: translateX(0.4rem) rotate(2deg); }
+}
+
+.globe.shaking {
+    animation: shake 600ms ease;
+}
